@@ -17,7 +17,7 @@ public class Animation {
         this.lastFrameTime = System.currentTimeMillis();
     }
 
-    //@ อัปเดตเฟรมอนิเมชัน
+    //@ อัปเดตเฟรมอนิเมชัน ทำให้เฟรมเปลี่ยนตามเวลา
     public void update() {
         if (System.currentTimeMillis() - lastFrameTime >= frameDelay) {
             currentFrameIndex++;

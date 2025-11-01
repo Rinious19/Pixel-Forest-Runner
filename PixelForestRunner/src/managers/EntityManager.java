@@ -42,11 +42,9 @@ public class EntityManager {
     private void checkCollisions() {
         //* เช็คเฉพาะตอนที่ Player ยังไม่ตาย
         if (!player.isAlive()) return;
-
         Iterator<Obstacle> iterator = obstacles.iterator();
         while (iterator.hasNext()) {
             Obstacle obs = iterator.next();
-
             //? หัวใจของการชน: .intersects()
             if (player.getHitbox().intersects(obs.getHitbox())) {
                 player.takeDamage(10); //* ลด HP
@@ -54,6 +52,7 @@ public class EntityManager {
             }
         }
     }
+    
     //@ draw() → วาด Entity ทุกชิ้นที่ดูแลอยู่ลงบนจอ
     public void draw(Graphics g) {
         player.draw(g);

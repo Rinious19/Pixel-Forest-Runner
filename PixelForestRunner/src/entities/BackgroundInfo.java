@@ -3,7 +3,7 @@ package entities; // หรือ package ที่คุณใช้เก็�
 public class BackgroundInfo {
     
     // ID สำหรับด่าน
-    public static final int STAGE_FOREST_OF_DAWN = 1;
+    public static final int STAGE_FOREST_OF_DAWN = 1; //* ค่า ID ด่านที่ 1
     public static final int STAGE_FOREST_OF_DUSK = 2;
 
     private final int id;
